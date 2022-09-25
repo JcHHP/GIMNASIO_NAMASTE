@@ -1,0 +1,46 @@
+.contenido_principal{
+    text-align: center;
+}
+
+.titulo-modulo{
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+    margin-top: -10px;
+    background-color: #ee61a3;
+    width: 1247px;
+    height: 40px;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+}
+
+.titulo-modulo>p{
+    margin-left: 20px;
+}
+
+.table{
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    background-color: rgb(243, 243, 243);
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,td{
+    padding: 15px;
+}
+
+td{
+    border-bottom: solid 1px;
+}
+
+thead{
+    background-color: #3b89ff;
+    color: #FFF;
+}
+
+
+tr:nth-child(even){
+    background-color: rgb(254, 254, 254);
+}

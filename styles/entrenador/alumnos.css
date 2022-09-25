@@ -1,0 +1,50 @@
+.contenido_principal{
+    text-align: center;
+}
+
+.titulo-modulo{
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+    margin-top: -10px;
+    background-color: #ee61a3;
+    width: 1247px;
+    height: 40px;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+}
+
+.titulo-modulo>p{
+    margin-left: 20px;
+}
+
+.contenido_principal{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 87%;
+}
+
+.lista_alumnos{
+    border: solid 1px #ccc;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    
+}
+
+.lista_alumnos thead tr{
+    background-color: #333;
+    color: white;
+}
+.lista_alumnos th, .lista_alumnos td {
+    border-right: 1px solid #ccc;
+}
+
+.lista_alumnos th:last-child, .lista_alumnos td:last-child {
+    border-right: 0;
+}
+
+.lista_alumnos td {
+    border-bottom: 1px solid #ccc;
+}

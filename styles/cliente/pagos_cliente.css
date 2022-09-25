@@ -1,0 +1,76 @@
+.titulo-modulo{
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+    margin-top: -10px;
+    background-color: #ee61a3;
+    width: 1247px;
+    height: 40px;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+}
+
+.titulo-modulo>p{
+    margin-left: 20px;
+}
+
+.tabla-pagos{
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    background-color: rgb(243, 243, 243);
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,td{
+    padding: 15px;
+}
+
+thead{
+    background-color: #3b89ff;
+    color: #FFF;
+}
+
+tr>td:nth-child(1), tr>td:nth-child(4){
+    text-align: left;
+    padding-left: 25px;
+}
+
+tr>td:nth-child(1){
+    width: 100px;
+}
+
+tr>td:nth-child(3){
+    width: 180px;
+}
+
+tr>td:nth-child(5){
+    width: 190px;
+}
+
+tr>td:nth-child(6){
+    width: 170px;
+}
+
+tr:nth-child(even){
+    background-color: rgb(254, 254, 254);
+}
+
+.boton-archivo{
+    width: 60px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffc107;
+}
+
+.boton-archivo>i{
+    font-size: 25px;
+    color: #FFF;
+}
+
+.boton-archivo:hover{
+    cursor: pointer;
+    background-color: #ffcc34;
+}

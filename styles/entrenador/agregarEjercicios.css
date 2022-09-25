@@ -1,0 +1,111 @@
+.contenido_principal{
+    text-align: center;
+}
+
+.titulo-modulo{
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+    margin-top: -10px;
+    background-color: #ee61a3;
+    width: 1247px;
+    height: 40px;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+}
+
+.titulo-modulo>p{
+    margin-left: 20px;
+}
+
+.insertarEjercicios{
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgb(243, 243, 243);
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 5px;
+    border: solid 1px;
+    text-align: center;
+}
+
+.insertarEjercicios>input{
+    width: 90%;
+    border-radius: 5px;
+    height: 30px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+    font-size: 14px;
+}
+
+.insertarEjercicios>select{
+    width: 93%;
+    border-radius: 5px;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+    font-size: 14px;
+}
+
+td>img{
+    width: 240px;
+    height: 240px;  
+}
+
+table{
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    background-color: rgb(243, 243, 243);
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,td{
+    padding: 15px;
+}
+
+td{
+    border: solid 1px;
+}
+
+thead{
+    background-color: #3b89ff;
+    color: #FFF;
+}
+
+tr:nth-child(even){
+    background-color: rgb(254, 254, 254);
+}
+
+label{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 25px;
+}
+
+.boton1{
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #dc3545;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 14px;
+}
+
+.boton1:hover{
+    cursor: pointer;
+    background-color: #e15160;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+.contenido_principal{
+    text-align: center;
+}
+
+.titulo-modulo{
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+    margin-top: -10px;
+    background-color: #ee61a3;
+    width: 1247px;
+    height: 40px;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+}
+
+.titulo-modulo>p{
+    margin-left: 20px;
+}
+
+.contenido_principal{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 100%;
+    height: 87%;
+    margin-top: 20px;
+}
+
+.entrenador, .entrenadora{
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.img-entrenador,.img-entrenadora{
+    display: flex;
+    position: relative;
+    
+    align-items: center;
+
+    width: 300px;
+    height: 380px;
+    
+}
+
+.img-entrenador>img, .img-entrenadora>img{
+    text-align: center;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    position: absolute;
+    box-shadow: 0 5px 10px 2px #000;
+}
+
+.img-entrenador>p, .img-entrenadora>p{
+    display: grid;
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    transform: translateY(55px);
+    border: 10px;
+}
+
+.btn-confirmar{
+    margin-top: -45px;
+}
+
+.btn-confirmar>button:nth-child(1){
+    position: relative;
+    align-items: center;
+    transform: translateY(350px);
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color:  #ffc107;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn-confirmar>button:nth-child(2){
+    position: relative;
+    align-items: center;
+    transform: translateY(350px);
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #00c851;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn-confirmar>button:nth-child(1):hover{
+    cursor: pointer;
+    background-color:  #ffce3d;
+}
+
+.btn-confirmar>button:nth-child(2):hover{
+    cursor: pointer;
+    background-color: #0fd960;
+}

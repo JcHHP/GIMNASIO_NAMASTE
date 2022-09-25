@@ -1,0 +1,128 @@
+.title_header,.contenido_principal{
+    text-align: center;
+}
+
+.titulo-modulo{
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+    margin-top: -10px;
+    background-color: #ee61a3;
+    width: 1247px;
+    height: 40px;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+}
+
+.titulo-modulo>p{
+    margin-left: 20px;
+}
+
+.contenido_principal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.titulo-mes{
+    margin-top: -10px;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: flex-start;
+    color: #000;
+}
+
+.titulo-mes>h3, .titulo-año>h3{
+    font-size: 17px;
+    margin-left: 15px;
+}
+
+.titulo-año{
+    margin-top: 40px;
+    margin-bottom: -20px;
+    display: flex;
+    justify-content: center;
+    color: #000;
+}
+
+.secciones-estados{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.secciones-estados>div{
+    width: 365px;
+    height: 165px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    text-align: start;
+    box-shadow: 0 2px 9px #000;
+}
+
+.detalles{
+    width: 100%;
+    height: 100%;
+    margin-left: 30px;
+    line-height: 60px;
+}
+
+.detalles>h1{
+    font-size: 35px;
+}
+
+.detalles>h3{
+    margin-top: -10px;
+}
+
+.icono-modulo{
+    width: 400px;
+    height: 100%;
+}
+
+.ingresos,.egresos,.utilidad{
+    display: flex;
+    flex-direction: row;
+    background-color: #28a745;
+}
+
+.icono-modulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono-modulo>i{
+    font-size: 105px;
+    color: rgba(0, 0, 0, 0.15);
+}
+
+.egresos{
+    margin-right: 50px;
+    margin-left: 50px;
+    background-color: #dc3545;
+}
+
+.utilidad{
+    background-color: #ffc107;
+}
+
+.contenedor-canvas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 97.5%;
+    margin-top: 20px;
+}
+
+#estadisticas-canvas{
+    width: 500px;
+    padding-bottom: 20px;
+}

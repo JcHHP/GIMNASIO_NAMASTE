@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.encabezado{
+    position: relative;
+    background-color: #000000;
+    align-items: flex-end;
+    text-align: center;
+    z-index: 99;
+    transform: translateY(480px);
+    border-radius: 0px 0px 0px 10px; 
+}
+
+.encabezado>h1{
+    color: #fffb00;
+    font-size: 50px;
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0 auto;
+}
+
+.encabezado>h1>label{
+    color: #000000;
+    text-shadow: 2px 2px 0 #fffb00,-2px 2px 0 #fffb00,2px -2px 0 #fffb00,-2px -2px 0 #fffb00;
+    margin-left: 25px;
+}
+
+.contenedor-principal{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffc60;  
+}
+
+.cuerpo{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 45% 55%;
+    width: 1000px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #000;
+}
+
+.img-presentacion{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-right: 3px solid;
+}
+
+.img-presentacion>div>img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.formulario-datos{
+    width: 400px;
+    height: 370px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.formulario-datos>h1{
+    text-align: center;
+    padding-top: 10px;
+    color: black;
+}
+
+.DNI,.contraseña{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 25px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.input-DNI,.input-contraseña{
+    width: 80%;
+    height: 50px;
+    font-size: 15px;
+    line-break: 50px;
+    border-radius: 10px;
+    padding-left: 50px;
+    border: 2px solid #6c757d;
+}
+
+.recuperar_contraseña{
+    padding-left: 160px;
+}
+
+.recuperar_contraseña>a{
+    text-decoration: underline;
+    color: blue;
+}
+
+.recuperar_contraseña>a:hover{
+    cursor: pointer;
+    color: rgb(92, 92, 255);
+}
+
+#boton-ingresar{
+    margin: 20px;
+    width: 84%;
+    height: 10%;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: white;
+}
+
+#boton-ingresar:hover{
+    cursor: pointer;
+    background-color: rgb(59, 59, 59);
+}
+
+.icono{
+    position: absolute;
+    font-size: 18px;
+    left: 50px;
+}
+
+.redes{
+    display: flexbox;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    transform: translateY(40px);
+}
+
+.redes_imagenes{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.fa-facebook,.fa-tiktok,.fa-instagram{
+    width: 85px;
+    font-size: 35px;
+}
+
+.facebook>a,.tik_tok>a,.instagram>a{
+    text-decoration: none;
+    color: black;
+}
+
+.facebook>a:hover,.tik_tok>a:hover,.instagram>a:hover{
+    color: rgb(61, 61, 61);
+} 
