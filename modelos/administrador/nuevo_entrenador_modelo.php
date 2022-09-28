@@ -22,8 +22,9 @@
         return $respuesta;
     }
 
-    function agregar_entrenador($DNI,$contraseña,$nombres,$apellidos,$sexo,$fnacimiento,$experiencia,$telefono,$correo){
-        $consulta="INSERT INTO entrenador VALUES ('$DNI','$contraseña','$nombres','$apellidos','$sexo','$fnacimiento','$experiencia','$telefono','$correo','Activo')";
-        mysqli_query(conexionBD::conexion(),$consulta);
+    function agregar_entrenador($DNI,$contraseña,$nombres,$apellidos,$sexo,$fnacimiento,$experiencia,$telefono,$correo,$fotografia){
+        $consulta="INSERT INTO entrenador VALUES ('$DNI','$contraseña','$nombres','$apellidos','$sexo','$fnacimiento','$experiencia','$telefono','$correo','Activo',$fotografia)";
+        $respuesta=mysqli_query(conexionBD::conexion(),$consulta);
+        return $respuesta;
     }
 ?>

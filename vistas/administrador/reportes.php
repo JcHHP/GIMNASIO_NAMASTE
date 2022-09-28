@@ -56,14 +56,6 @@
             <button id="btn-egresos">GENERAR</button>
         </div>
 
-        <di  class="div-reporte">
-           <div>
-                <img src="../images/estado_cuentas.jpg" alt="" srcset="">
-                <p>REPORTE DE ESTADO DE CUENTAS</p>
-           </div>
-
-            <button id="btn-estado-cuentas">GENERAR</button>
-        </di>
     </div>
     
     <script src="../scripts/administrador/reportes.js"></script>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-09-2022 a las 23:19:32
+-- Tiempo de generación: 28-09-2022 a las 07:50:41
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -96,7 +96,10 @@ INSERT INTO `asistencia` (`ID_asistencia`, `DNI_usuario`, `Fecha`, `Hora`) VALUE
 (13, '71118318', '2022-09-17', '18:41:28'),
 (14, '72118417', '2022-09-17', '18:41:44'),
 (15, '72118418', '2022-09-17', '18:41:46'),
-(16, '43548422', '2022-09-20', '15:11:00');
+(16, '43548422', '2022-09-20', '15:11:00'),
+(17, '71118318', '2022-09-25', '16:46:53'),
+(18, '70684549', '2022-09-26', '16:48:05'),
+(19, '42545878', '2022-09-27', '15:22:24');
 
 -- --------------------------------------------------------
 
@@ -123,14 +126,20 @@ CREATE TABLE `cliente` (
 
 INSERT INTO `cliente` (`DNI_cliente`, `Contraseña`, `Nombres`, `Apellidos`, `sexo`, `F_nacimiento`, `Nivel`, `Teléfono`, `Correo`, `Estado`) VALUES
 ('42545878', '$2y$10$5DlzR1cRQ6.2bxbdd0G73.0vKjGRYbrwYLXaWuyFqbk.AwVK8vof6', 'Hugo', 'Alor Huamani', 'sdfssssss', '2022-09-30', 'BASICO', '987654321', 'a@gmail.com', 'Activo'),
+('42574212', '$2y$10$G4HiTp.95AjPU2ToMOmBTO8ALs1RfK46GM8cbXGdCDLjt4/5/1yaS', 'Silvia Gina', 'Pinaud Mendoza', 'Femenino', '1994-05-17', 'BASICO', '925454656', 'sil@gmail.com', 'Activo'),
+('43855156', '$2y$10$wKJDFdkpMLXvX8FSIio8Ie7myLxSy9bJApVTNXE35VnouiUNT.OxW', 'Elbert Francisco', 'Mendez Rondon', 'Masculino', '2000-05-02', 'BASICO', '974565989', 'ebr@gmail.com', 'Activo'),
 ('45212122', '$2y$10$UZcM/cIZwTbTP5n6Nh.gYOQyw9nzHoxiSB3dfhNyx1WIml1AL/WKq', 'Gilder', 'Claudio Espinoza', 'Masculino', '2022-09-01', 'BASICO', '954123564', 'alabin@gmail.com', 'Activo'),
+('45652121', '$2y$10$yd7iwW0SW4b9tALF.trDc.iJ9XnwQ1p521vLFKckn9in6sbUDFtQy', 'Elena', 'Navarro Cusihuallpa', 'Femenino', '2001-04-09', 'BASICO', '965654532', 'silvi@gmail.com', 'Activo'),
 ('70684549', '$2y$10$h7g0DSHMS7ZmrL8.dq01PO9ssU5nj9Quulc8rVV662U2yE2aSdA8i', 'Frank Oscar', 'Yupanqui Najarro', 'MASCULINO', '2001-06-15', 'BASICO', '987654321', 'jsdndsjf', 'ACTIVO'),
 ('71118318', '$2y$10$wq93AR1ntpqthLxuPPR8KOPrNqvxnTY447uwTBFjIQTgETIjuAcGi', 'Christian Eduardo', 'Macedo Yaicate', 'MASCULINO', '1997-03-15', 'INTERMEDIO', '987654321', 'dsfsdfsdf', 'ACTIVO'),
+('71532664', '$2y$10$XP3YFIKgKSNep/efeUTtDu3LkGIpSqr0r4uadcLtojSloJDgaaqoy', 'Miguel Angel', 'Garzon Rodriguez', 'Masculino', '2001-09-09', 'BASICO', '965612121', 'migan@gmail.com', 'Activo'),
+('71545656', '$2y$10$qwF8hg36tSrDNFWprSbz1uQoTF91sUJ2miyfY9PjA4AIF.faZ3xyu', 'Junior', 'Ricapa Diaz', 'Masculino', '1997-05-15', 'INTERMEDIO', '954158484', 'jnr@gmail.com', 'Activo'),
 ('71609806', '$2y$10$vZmitFBVkzmzOimDHbrHqOpYKfL8XSqdTwWbnz9asx2/o.RcBrbHm', 'Liseth', 'Huayllas Romero', 'FEMENINO', '2001-06-15', 'BASICO', '987654321', 'jsdndsjf', 'ACTIVO'),
 ('72118417', '$2y$10$NgbwdapFEKpCgfvk6BH/kONmn.VKyz6yYsP8xnEA/TwMJvPT3./um', 'Dayana Mirian', 'Flores Huaylla', 'FEMENINO', '0000-00-00', 'INTERMEDIO', '987654321', 'dsfsdf', 'ACTIVO'),
 ('72118419', '$2y$10$pAARFJMC/AoDo5l2YVxuheP5NJy53TQNHi/O4e5npvvOZzwyhCG8G', 'Luis Javier', 'Flores Carpio', 'MASCULINO', '1995-07-15', 'INTERMEDIO', '987654321', 'lflores@gmail.com', 'ACTIVO'),
 ('72145874', '$2y$10$udekSXQ9.VjenLccMGVElOc3lq8v5enAbSfJWWahNmYfr1wyQ/WQy', 'Jonathan Esteban', 'Maita Quispe', 'MASCULINO', '2001-02-15', 'INTERMEDIO', '987654321', 'sdadasda', 'ACTIVO'),
 ('72148318', '$2y$10$2rmlnHN7GvDnULYfgPS/muM13fVeW.gXmrpkY9VocZZPRpnQskJAS', 'Edi Froilan', 'Abanto Vilchez', 'MASCULINO', '2001-05-14', 'INTERMEDIO', '987654321', 'edi21@gmail.com', 'ACTIVO'),
+('72454845', '$2y$10$II0Im1n1ObTvIcyNEvIus.o064H/UthtAvQmhsWNffjpODKuwFyiG', 'Brayan Maycol', 'Marcelo Rojas', 'Masculino', '2022-09-23', 'BASICO', '954265154', 'mhaik@gmail.com', 'Activo'),
 ('76020124', '$2y$10$7gZXV030OgATG9.Pc4Wlq.Rx1tfPBcPnK9gfqix0iv83Vqm5N/3X2', 'Maissa', 'Solis Loaiza', 'FEMENINO', '2003-05-10', 'BASICO', '925919756', '1109120212@unajma.edu.pe', 'ACTIVO');
 
 -- --------------------------------------------------------
@@ -153,7 +162,8 @@ CREATE TABLE `contrato` (
 --
 
 INSERT INTO `contrato` (`ID_contrato`, `DNI_entrenador`, `F_inicio`, `F_final`, `tiempo_trabajo`, `sueldo`) VALUES
-(1, '77227760', '2022-09-04', '2022-10-04', 'MEDIO TIEMPO', 600);
+(1, '77227760', '2022-09-04', '2022-10-04', 'MEDIO TIEMPO', 450),
+(12, '42146666', '2022-09-27', '2022-10-27', 'TIEMPO COMPLETO', 900);
 
 -- --------------------------------------------------------
 
@@ -236,21 +246,22 @@ CREATE TABLE `entrenador` (
   `experiencia` varchar(10) NOT NULL,
   `Teléfono` char(9) NOT NULL,
   `Correo` varchar(50) NOT NULL,
-  `Estado` varchar(10) NOT NULL
+  `Estado` varchar(10) NOT NULL,
+  `fotografia` mediumblob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `entrenador`
 --
 
-INSERT INTO `entrenador` (`DNI_entrenador`, `Contraseña`, `Nombres`, `Apellidos`, `sexo`, `F_nacimiento`, `experiencia`, `Teléfono`, `Correo`, `Estado`) VALUES
-('42146666', '$2y$10$wbBAsfYjDAiEJrgHEU403uNKFy9T8RjUh2nUOSmDle6caQ8Ld64e6', 'Jerson Percy', 'AcuÑa Conde', 'Masculino', '2022-09-24', 'MEDIA', '942144586', 'anel@gmail.com', 'Activo'),
-('43548422', '$2y$10$3t/vX5sPOVL78L4exb9/muMG.cRtZyzjr/19Pj9mWhePI7EXLdrqy', 'Milka Rosa', 'Gonzales Ruiz', 'Femenino', '2022-09-24', 'MEDIA', '987654321', 'a@gmail.com', 'Activo'),
-('45515123', '$2y$10$PndBPJNMvCziW9wVrDHZtOqXiYEqioc.Djee2Xfr7r.L31VzXwSdO', 'Natalia', 'Ascurra Cano', 'Femenino', '2022-09-14', 'MEDIA', '987654321', 'a@gmail.com', 'Activo'),
-('71609807', '$2y$10$.46sjYv29F9Ok8pYbGtuGePjYPuqI12MWeft4QBL3z8N0JOi6exvy', 'Yoselin', 'Huayllas Romero', 'FEMENINO', '0000-00-00', 'MEDIA', '', '', 'ACTIVO'),
-('72118418', '$2y$10$Rn6rdKs0cwOr1OrfURdw1u9ldQwkFjer3TmNX/69WAmVRnYT.eLW6', 'Ebony Estefani', 'Llerena Tapia', 'FEMENINO', '2003-03-28', 'AVANZADA', '987654321', 'fdgdgf', 'ACTIVO'),
-('74118318', '$2y$10$P9WkuABUfAQmfV6rIAO/suoLM0ldLMLRLUGaU3zMESohhdo.bWjcq', 'Flavia Alejandra', 'Garcia Molina', 'FEMENINO', '1987-08-05', 'AVANZADA', '987654321', '', 'ACTIVO'),
-('77227760', '$2y$10$0JcHyjkBOGKq.7yQ1VO.P.pvO.RD/WnlatiJQ.9u6Te5Np8MDjr1i', 'Gimena', 'Quispe Rivas', 'FEMENINO', '2001-08-30', 'MEDIA', '987654321', 'fsdfsdfsfsf', 'ACTIVO');
+INSERT INTO `entrenador` (`DNI_entrenador`, `Contraseña`, `Nombres`, `Apellidos`, `sexo`, `F_nacimiento`, `experiencia`, `Teléfono`, `Correo`, `Estado`, `fotografia`) VALUES
+('42146666', '$2y$10$wbBAsfYjDAiEJrgHEU403uNKFy9T8RjUh2nUOSmDle6caQ8Ld64e6', 'Jerson Percy', 'AcuÑa Conde', 'Masculino', '2022-09-24', 'MEDIA', '942144586', 'anel@gmail.com', 'Activo', ''),
+('43548422', '$2y$10$3t/vX5sPOVL78L4exb9/muMG.cRtZyzjr/19Pj9mWhePI7EXLdrqy', 'Milka Rosa', 'Gonzales Ruiz', 'Femenino', '2022-09-24', 'MEDIA', '987654321', 'a@gmail.com', 'Activo', ''),
+('45515123', '$2y$10$PndBPJNMvCziW9wVrDHZtOqXiYEqioc.Djee2Xfr7r.L31VzXwSdO', 'Natalia', 'Ascurra Cano', 'Femenino', '2022-09-14', 'MEDIA', '987654321', 'a@gmail.com', 'Activo', ''),
+('71609807', '$2y$10$.46sjYv29F9Ok8pYbGtuGePjYPuqI12MWeft4QBL3z8N0JOi6exvy', 'Yoselin', 'Huayllas Romero', 'FEMENINO', '0000-00-00', 'MEDIA', '', '', 'ACTIVO', ''),
+('72118418', '$2y$10$Rn6rdKs0cwOr1OrfURdw1u9ldQwkFjer3TmNX/69WAmVRnYT.eLW6', 'Ebony Estefani', 'Llerena Tapia', 'FEMENINO', '2003-03-28', 'AVANZADA', '987654321', 'fdgdgf', 'ACTIVO', ''),
+('74118318', '$2y$10$P9WkuABUfAQmfV6rIAO/suoLM0ldLMLRLUGaU3zMESohhdo.bWjcq', 'Flavia Alejandra', 'Garcia Molina', 'FEMENINO', '1987-08-05', 'AVANZADA', '987654321', '', 'ACTIVO', ''),
+('77227760', '$2y$10$0JcHyjkBOGKq.7yQ1VO.P.pvO.RD/WnlatiJQ.9u6Te5Np8MDjr1i', 'Gimena', 'Quispe Rivas', 'FEMENINO', '2001-08-30', 'MEDIA', '987654321', 'fsdfsdfsfsf', 'ACTIVO', '');
 
 -- --------------------------------------------------------
 
@@ -288,10 +299,19 @@ INSERT INTO `matricula` (`ID_matricula`, `DNI_cliente`, `F_inicio`, `F_final`, `
 (7, '70684549', '2022-09-04', '2022-09-30', 'DIARIO', 30, 100),
 (9, '72145874', '2022-09-05', '2022-10-05', 'INTERDIARIO', 15, 55),
 (27, '42545878', '2022-09-22', '2022-10-22', 'DIARIO', 30, 100),
-(28, '71118318', '2022-08-09', '2022-09-09', 'DIARIO', 30, 60),
-(29, '72118419', '2022-09-23', '2022-10-23', 'DIARIO', 30, 1000),
-(30, '42545878', '2022-09-23', '2022-10-23', 'DIARIO', 30, 100),
-(31, '72145874', '2022-01-01', '2022-02-01', 'DIARIO', 30, 100);
+(29, '72118419', '2022-09-23', '2022-10-23', 'DIARIO', 30, 100),
+(34, '45212122', '2022-09-27', '2022-10-27', 'DIARIO', 30, 100),
+(35, '71118318', '2022-09-27', '2022-10-27', 'DIARIO', 30, 100),
+(36, '71545656', '2022-09-27', '2022-10-27', 'DIARIO', 30, 100),
+(37, '71609806', '2022-09-27', '2022-10-27', 'DIARIO', 30, 100),
+(38, '72118417', '2022-09-27', '2022-10-27', 'INTERDIARIO', 15, 60),
+(39, '72145874', '2022-09-27', '2022-10-27', 'DIARIO', 30, 100),
+(40, '72148318', '2022-09-27', '2022-10-27', 'INTERDIARIO', 15, 60),
+(41, '42574212', '2022-09-27', '2022-10-27', 'DIARIO', 30, 100),
+(42, '43855156', '2022-09-27', '2022-10-27', 'DIARIO', 30, 100),
+(43, '45652121', '2022-09-27', '2022-10-27', 'DIARIO', 30, 100),
+(44, '71532664', '2022-09-27', '2022-10-27', 'DIARIO', 30, 100),
+(45, '72454845', '2022-09-28', '2022-10-28', 'DIARIO', 30, 90);
 
 -- --------------------------------------------------------
 
@@ -465,13 +485,13 @@ ALTER TABLE `rutina`
 -- AUTO_INCREMENT de la tabla `asistencia`
 --
 ALTER TABLE `asistencia`
-  MODIFY `ID_asistencia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `ID_asistencia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT de la tabla `contrato`
 --
 ALTER TABLE `contrato`
-  MODIFY `ID_contrato` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `ID_contrato` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `ejercicio`
@@ -483,7 +503,7 @@ ALTER TABLE `ejercicio`
 -- AUTO_INCREMENT de la tabla `matricula`
 --
 ALTER TABLE `matricula`
-  MODIFY `ID_matricula` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `ID_matricula` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT de la tabla `reporte_cliente`

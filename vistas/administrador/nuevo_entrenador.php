@@ -61,6 +61,11 @@
                 <input type="text" id="correo-electronico" name="correo-electronico">
             </div>
 
+            <div class="dato foto-entrenador">
+                <label for="foto">FOTOGRAFIA:</label>
+                <input type="file" id="foto" name="fotografia-entrenador">
+            </div>
+
             <button type="submit" class="btn-submit">AÑADIRㅤ<i class="fa-sharp fa-solid fa-plus"></i></button>
         </form>
     </div>

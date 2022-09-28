@@ -53,16 +53,16 @@ const selectTtrabajo=document.querySelector("#tiempo-trabajo").addEventListener(
 
     if(tTrabajo=='TIEMPO COMPLETO'){
         if(isNaN(aumento)){
-            sueldoTotal.value='S/1200.00';
+            sueldoTotal.value='S/900.00';
         }else{
-            sueldoTotal.value='S/'+ (1200+aumento) + '.00';
+            sueldoTotal.value='S/'+ (900+aumento) + '.00';
         }
         
     }else{
         if(isNaN(aumento)){
-            sueldoTotal.value='S/600.00';
+            sueldoTotal.value='S/450.00';
         }else{
-            sueldoTotal.value='S/'+ (600+aumento) + '.00';
+            sueldoTotal.value='S/'+ (450+aumento) + '.00';
         }
     }
 });
@@ -75,17 +75,17 @@ const inputAMTO=document.querySelector("#aumento").addEventListener("keyup",()=>
 
     if(isNaN(aumento)){
         if(tTrabajo=='TIEMPO COMPLETO'){
-            sueldoTotal.value='S/1200.00';
+            sueldoTotal.value='S/900.00';
             
         }else{
-            sueldoTotal.value='S/600.00';
+            sueldoTotal.value='S/450.00';
         }
     }else{
         if(tTrabajo=='TIEMPO COMPLETO'){
-            sueldoTotal.value='S/'+ (1200+aumento) + '.00';
+            sueldoTotal.value='S/'+ (900+aumento) + '.00';
             
         }else{
-            sueldoTotal.value='S/'+ (600+aumento) + '.00';
+            sueldoTotal.value='S/'+ (450+aumento) + '.00';
         }
     }
 });

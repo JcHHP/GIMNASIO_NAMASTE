@@ -54,7 +54,7 @@
 
             <div class="dato">
                 <label for="sueldo-total">SUELDO TOTAL</label>
-                <input type="text" id="sueldo-total" name="sueldo-total" value="S/1200.00" disabled>
+                <input type="text" id="sueldo-total" name="sueldo-total" value="S/900.00" disabled>
             </div>
 
             <button type="submit" class="btn-submit">AÑADIRㅤ<i class="fa-sharp fa-solid fa-plus"></i></button>

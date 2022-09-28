@@ -17,6 +17,7 @@ const botonSubmit= document.querySelector(".btn-submit").addEventListener("click
     let nexperiencia = document.querySelector('#nivel-experiencia').value;
     let telefono = document.querySelector('#telefono').value;
     let correo = document.querySelector('#correo-electronico').value;
+    let fotografia = document.querySelector('#foto').value;
 
     let REGEX_correo= /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
     let valoresAceptados = /^[0-9]+$/;
@@ -44,6 +45,12 @@ const botonSubmit= document.querySelector(".btn-submit").addEventListener("click
             icon: 'error',
             title: 'FORMATO DE EMAIL INVALIDO'
         });
+    }else if(fotografia==''){
+        
+        alertas.fire({
+            icon: 'error',
+            title: 'FOTO DEL ENTRENADOR NO SELECCIONADA'
+        });
     }else{
 
         const ajax = new XMLHttpRequest;
@@ -53,7 +60,7 @@ const botonSubmit= document.querySelector(".btn-submit").addEventListener("click
         ajax.setRequestHeader("content-type", "application/x-www-form-urlencoded");
         ajax.send('numero-DNI='+ numeroDNI +"&nombres="+ nombres +"&apellidos="+ apellidos +"&sexo="+ sexo
                 +"&fecha-nacimiento="+ fnacimiento +"&nivel-experiencia="+ nexperiencia
-                +"&telefono="+ telefono +"&correo-electronico="+ correo);
+                +"&telefono="+ telefono +"&correo-electronico="+ correo + "&fotografia-entrenador="+fotografia);
 
         ajax.onreadystatechange = function(){
             if(this.readyState ==4 && this.status==200){
@@ -76,8 +83,14 @@ const botonSubmit= document.querySelector(".btn-submit").addEventListener("click
                         title: 'EL CORREO YA SE ENCUENTRA REGISTRADO'
                     });
                     
+                }else if(this.responseText=='Extensión inválida'){
+                    alertas.fire({
+                        icon: 'error',
+                        title: 'SOLO SE PERMITEN FOTOGRAFIAS EN EXTENSION JPG Y PNG'
+                    });
+                    
                 }else{
-
+                    alert(this.responseText);
                     Swal.fire({
                         title: '¿DESEA AÑADIR UN NUEVO ENTRENADOR?',
                         icon: 'warning',
